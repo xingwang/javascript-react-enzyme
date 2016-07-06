@@ -10,8 +10,7 @@
   },
   "dependencies": {
     "react": "^15.1.0",
-    "react-dom": "^15.1.0",
-    "yargs": "^4.7.1"
+    "react-dom": "^15.1.0"
   },
   "devDependencies": {
     "babel-core": "^6.4.0",
@@ -26,6 +25,7 @@
     "jsdom": "^9.2.0",
     "json-loader": "^0.5.4",
     "karma": "^0.13.19",
+    "karma-babel-preprocessor": "^6.0.1",
     "karma-chai": "^0.1.0",
     "karma-mocha": "^1.0.1",
     "karma-phantomjs-launcher": "^1.0.0",
@@ -40,7 +40,8 @@
     "sinon": "^1.17.4",
     "webpack": "^1.12.11",
     "webpack-dev-server": "^1.14.1",
-    "webpack-node-externals": "^1.2.0"
+    "webpack-node-externals": "^1.2.0",
+    "yargs": "^4.7.1"
   },
   "scripts": {
     "build": "webpack",

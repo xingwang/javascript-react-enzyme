@@ -12,14 +12,14 @@ module.exports = function(config) {
 
     // include some polyfills for babel and phantomjs
     files: [
-      'node_modules/babel-polyfill/dist/polyfill.js',
-      './node_modules/phantomjs-polyfill/bind-polyfill.js',
       './test/**/*spec.js' // specify files to watch for tests
     ],
     preprocessors: {
       // these files we want to be precompiled with webpack
       // also run tests throug sourcemap for easier debugging
-      ['./test/**/*.js']: ['webpack', 'sourcemap']
+      './src/**/*.js': ['webpack', 'sourcemap'],
+      './src/**/*.jsx': ['webpack', 'sourcemap'],
+      './test/**/*.js': ['webpack', 'sourcemap']
     },
     webpack: {
        devtool: 'inline-source-map',
@@ -43,7 +43,16 @@ module.exports = function(config) {
         ],
         // run babel loader for our tests
         loaders: [
-          { test: /\.js?$/, exclude: /node_modules/, loader: 'babel' },
+          {
+            // make sure it can do both js and jsx
+            test: /\.jsx?$/,
+            exclude: path.resolve(__dirname, 'node_modules'),
+            loader: 'babel',
+            // following not needed if it is in the .babelrc file
+            query: {
+              presets: ['es2015', 'react']
+            }
+          },
         ],
       },
       // required for enzyme to work properly
@@ -52,7 +61,7 @@ module.exports = function(config) {
         'cheerio': 'window',
         'react/addons': true,
         'react/lib/ExecutionEnvironment': true,
-        'react/lib/ReactContext': 'window'
+        'react/lib/ReactContext': true
       },
     },
     webpackMiddleware: {
@@ -65,7 +74,8 @@ module.exports = function(config) {
       'karma-webpack',
       'karma-phantomjs-launcher',
       'karma-spec-reporter',
-      'karma-sourcemap-loader'
+      'karma-sourcemap-loader',
+      'karma-babel-preprocessor'
     ]
   });
 };
