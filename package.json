@@ -30,7 +30,7 @@
     "karma-mocha": "^1.0.1",
     "karma-phantomjs-launcher": "^1.0.0",
     "karma-sourcemap-loader": "^0.3.6",
-    "karma-spec-reporter": "0.0.26",
+    "karma-spec-reporter": "0.0.32",
     "karma-webpack": "^2.0.13",
     "mocha": "^2.5.3",
     "mocha-webpack": "^0.3.1",
