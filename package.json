@@ -9,7 +9,7 @@
     "dist": "dist"
   },
   "dependencies": {
-    "react": "^15.1.0",
+    "react": "^16.13.1",
     "react-dom": "^15.1.0"
   },
   "devDependencies": {
