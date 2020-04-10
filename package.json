@@ -19,7 +19,7 @@
     "babel-preset-es2015": "^6.3.13",
     "babel-preset-react": "^6.3.13",
     "babel-register": "^6.3.13",
-    "chai": "^3.5.0",
+    "chai": "^4.2.0",
     "enzyme": "^2.3.0",
     "expect": "^25.3.0",
     "jsdom": "^9.4.1",
