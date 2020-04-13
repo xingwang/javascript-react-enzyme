@@ -40,7 +40,7 @@
     "sinon": "^9.0.2",
     "source-map-support": "^0.5.16",
     "webpack": "^2.7.0",
-    "webpack-dev-server": "^1.14.1",
+    "webpack-dev-server": "^2.11.5",
     "webpack-node-externals": "^1.2.0",
     "yargs": "^15.3.1"
   },
