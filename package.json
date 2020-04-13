@@ -33,7 +33,7 @@
     "karma-spec-reporter": "0.0.32",
     "karma-webpack": "^2.0.13",
     "mocha": "^2.5.3",
-    "mocha-webpack": "^0.3.1",
+    "mocha-webpack": "^1.1.0",
     "phantomjs-polyfill": "0.0.2",
     "phantomjs-prebuilt": "^2.1.7",
     "react-addons-test-utils": "^15.1.0",
