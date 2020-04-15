@@ -27,7 +27,7 @@
     "karma": "^5.0.1",
     "karma-babel-preprocessor": "^7.0.0",
     "karma-chai": "^0.1.0",
-    "karma-mocha": "^1.0.1",
+    "karma-mocha": "^2.0.0",
     "karma-phantomjs-launcher": "^1.0.0",
     "karma-sourcemap-loader": "^0.3.6",
     "karma-spec-reporter": "0.0.32",
