@@ -21,7 +21,7 @@
     "babel-register": "^6.3.13",
     "chai": "^4.2.0",
     "enzyme": "^3.11.0",
-    "expect": "^25.3.0",
+    "expect": "^26.0.0",
     "jsdom": "^16.2.2",
     "json-loader": "^0.5.4",
     "karma": "^5.0.1",
